@@ -28,7 +28,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 1000px;
     margin: 0 auto;
 }
 
@@ -68,6 +67,8 @@ body {
     line-height: 1.8;
 }
 
+/* BUTTONS */
+
 .button {
     padding: 15px 25px;
     border-radius: 25px;
@@ -106,23 +107,8 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -137,3 +123,34 @@ body {
     color: hsl(228, 45%, 44%);
     font-size: 11px;
 }
+
+@media (max-width: 630px) {
+
+    .container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .luxury {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .block {
+        max-width: 300px;
+    }
+
+    .article {
+        margin-bottom: 20px;
+    }
+    
+
+    /* FOOTER */
+
+    .attribution { 
+        display: none;
+    }
+  }
